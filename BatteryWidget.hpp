@@ -7,6 +7,7 @@
 
 class BatteryWidget : public QWidget {
 public:
+int value;
 	BatteryWidget ( QWidget * parent = 0, Qt::WindowFlags f = 0 ):QWidget(parent, f) 
 	{
 		//paintEvent(QPaintEvent * event);
@@ -15,7 +16,8 @@ public:
 	};
 	virtual void paintEvent ( QPaintEvent * event )	{
 		QRect rect = event->rect();
-    		draw(rect,13);
+    		
+	draw(rect,value);
 	}
 
 
@@ -30,7 +32,7 @@ public:
 	    //painter.drawText(rect, Qt::AlignCenter,
 		              //"Data");
 	   
-	    painter.drawText(rect, Qt::AlignCenter,QString("%1").arg(value));
+	    
 	   
 	    //painter.drawRect(rect);
 	   
@@ -40,6 +42,7 @@ public:
 	    
 	    int x= rect.x()+(rect.width()*0.9);
 	    int y =rect.y()+rect.height()/2 -5;
+	    painter.drawText(rect, Qt::AlignCenter,QString("%1").arg(value));
 
 	}
 	

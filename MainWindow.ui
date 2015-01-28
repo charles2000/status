@@ -17,22 +17,12 @@
    <widget class="BatteryWidget" name="battery" native="true">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>360</y>
+      <x>20</x>
+      <y>390</y>
       <width>120</width>
       <height>80</height>
      </rect>
     </property>
-    <widget class="StatusWidget" name="battery_4" native="true">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>121</width>
-       <height>81</height>
-      </rect>
-     </property>
-    </widget>
    </widget>
    <widget class="StatusWidget" name="battery_2" native="true">
     <property name="geometry">
