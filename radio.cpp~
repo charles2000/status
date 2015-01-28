@@ -1,0 +1,7 @@
+#include <QLabel>
+QLabel label;//afw
+label.setPixmap("wifi-32(1).png");//afw
+label.show();//afw
+QLabel label2;//afw
+label2.setPixmap("wifi-empty-32(1).png");//afw
+label2.show();//afw
