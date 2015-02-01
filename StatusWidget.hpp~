@@ -4,6 +4,9 @@
 #include <QtWidgets>
 #include <QPainter>
 #include <QRect>
+#include <string>
+#include <QString>
+#include <string>
 //"wifi-32(1).png"
 
 class StatusWidget : public QWidget {
@@ -17,7 +20,11 @@ public:
 	//paintEvent(QPaintEvent * event);
 		//draw(QRect &rect);  
    		_ui.setupUi(this);
-		set(true,10);
+		set_signal(true);// whether or not the radio works
+		set_image(true);// whether or not the camera can see the robot
+		set_battery(18);
+		set_id(903077);
+		set_serial("hi");
 	
 
 
@@ -30,18 +37,30 @@ public:
 
 		
 	}
-	void set(bool signal,int value)
+	void set_signal(bool signal)
+	{ 
+		if (signal==true) {_ui.label->setPixmap(QPixmap("../wifi-32(1).png"));}
+		else{_ui.label->setPixmap(QPixmap("../wifi-empty-32(1).png"));}
+		
+	}
+
+
+
+	void set_image(bool image)
 {
-	if (signal==true) {_ui.label->setPixmap(QPixmap("../wifi-32(1).png"));}
-else{_ui.label->setPixmap(QPixmap("../wifi-empty-32(1).png"));}
-_ui.battery_4->value=value;
-		
+	
+	if (image==true) {_ui.image->setPixmap(QPixmap("../camera-16.png"));}
+else{_ui.image->setPixmap(QPixmap("../camera-16(1).png"));}
 
+	//_ui.Id->setText(QString(id));
+		
 }
+	void set_battery(int value){_ui.battery_4->value=value;}
+	
+
+	void set_id(int id){_ui.Id->setText(QString("%1").arg(id));}
+	void set_serial(std::string s){_ui.serial->setText(QString::fromStdString(s));}//
 
 
 	
-	
-
-		
 };

@@ -1,4 +1,4 @@
-#pragma once
+/**#pragma once
 
 #include <QtWidgets>
 #include <QPainter>
@@ -8,3 +8,4 @@
 QLabel mylabel;
 mylabel.setPixmap("wifi-32(1).png");
 mylabel.show();
+**/

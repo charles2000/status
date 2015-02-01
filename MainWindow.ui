@@ -14,23 +14,13 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="BatteryWidget" name="battery" native="true">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>390</y>
-      <width>120</width>
-      <height>80</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="StatusWidget" name="battery_2" native="true">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>20</x>
       <y>30</y>
-      <width>121</width>
-      <height>81</height>
+      <width>251</width>
+      <height>201</height>
      </rect>
     </property>
    </widget>
@@ -79,12 +69,6 @@
   </widget>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>BatteryWidget</class>
-   <extends>QWidget</extends>
-   <header>BatteryWidget.hpp</header>
-   <container>1</container>
-  </customwidget>
   <customwidget>
    <class>StatusWidget</class>
    <extends>QWidget</extends>
