@@ -7,6 +7,9 @@
 #include <string>
 #include <QString>
 #include <string>
+#include <QApplication>
+#include <QHBoxLayout>
+
 //"wifi-32(1).png"
 
 class StatusWidget : public QWidget {
@@ -23,13 +26,9 @@ public:
 		set_signal(true);// whether or not the radio works
 		set_image(true);// whether or not the camera can see the robot
 		set_battery(18);
-		set_id(903077);
-		set_serial("hi");
-	
+		set_id(15);//shell id
+		set_serial("hi");//robot serial number
 
-
-		
-	      
 	};
 	virtual void paintEvent ( QPaintEvent * event )	{
 		//QRect rect = event->rect();
@@ -39,8 +38,8 @@ public:
 	}
 	void set_signal(bool signal)
 	{ 
-		if (signal==true) {_ui.label->setPixmap(QPixmap("../wifi-32(1).png"));}
-		else{_ui.label->setPixmap(QPixmap("../wifi-empty-32(1).png"));}
+		if (signal==true) {_ui.label->setPixmap(QPixmap("../wifi-16(1).png"));}
+		else{_ui.label->setPixmap(QPixmap("../wifi-empty-16(1).png"));}
 		
 	}
 

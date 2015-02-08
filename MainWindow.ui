@@ -19,28 +19,8 @@
      <rect>
       <x>20</x>
       <y>30</y>
-      <width>251</width>
-      <height>201</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="StatusWidget" name="battery_3" native="true">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>0</y>
-      <width>121</width>
-      <height>81</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="StatusWidget" name="battery_5" native="true">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>120</y>
-      <width>121</width>
-      <height>81</height>
+      <width>511</width>
+      <height>101</height>
      </rect>
     </property>
    </widget>

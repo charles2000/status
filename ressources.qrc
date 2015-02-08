@@ -28,6 +28,20 @@
      <file>camera-16(1)/paste.png</file>
      <file>camera-16(1)/save.png</file>
 
+     <file>wifi-empty-16(1)/copy.png</file>
+     <file>wifi-empty-16(1)/cut.png</file>
+     <file>wifi-empty-16(1)/new.png</file>
+     <file>wifi-empty-16(1)/open.png</file>
+     <file>wifi-empty-16(1)/paste.png</file>
+     <file>wifi-empty-16(1)/save.png</file>
+
+     <file>wifi-16(1)/copy.png</file>
+     <file>wifi-16(1)/cut.png</file>
+     <file>wifi-16(1)/new.png</file>
+     <file>wifi-16(1)/open.png</file>
+     <file>wifi-16(1)/paste.png</file>
+     <file>wifi-16(1)/save.png</file>
+
  </qresource>
  </RCC>
 

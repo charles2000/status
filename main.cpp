@@ -6,6 +6,7 @@
 #include <QLabel>//added afw a
 #include <QImage>// added after worked
 #include "BatteryWidget.hpp" 
+#include "StatusWidget.hpp"
 //#include "radio.cpp"
 // use qrc file for the radio. 
 
@@ -18,6 +19,9 @@ int main(int argc, char **argv) {
     QApplication app(argc, argv);
 
     MainWindow win;
+    
+  
+    
     win.show();
 	
     return app.exec();
